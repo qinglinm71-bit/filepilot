@@ -12,3 +12,4 @@
 - Verified desktop and 375x812 mobile layouts in a real browser with no console errors; generated `docs/screenshot.png`.
 - Desktop Chrome and Pixel 7 Playwright E2E flows pass for import and live rename preview.
 - Final `npm run check` passes with 8 unit assertions; initial JavaScript chunk is ~221 KB after lazy-loading PDF and ZIP libraries.
+- Published public repository `qinglinm71-bit/filepilot`; initial GitHub Actions verification and Pages deployment succeeded.

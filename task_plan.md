@@ -20,7 +20,7 @@ Build and publish a production-ready, browser-only FilePilot MVP covering phase-
 - [complete] 5. Implement PDF merge/split and archive output
 - [complete] 6. Add onboarding/help/privacy, responsive UI, accessibility, and PWA baseline
 - [complete] 7. Add unit/E2E tests, run lint/test/build, and fix failures
-- [in_progress] 8. Initialize Git, publish to GitHub, enable Pages workflow, and report demo URL
+- [complete] 8. Initialize Git, publish to GitHub, enable Pages workflow, and report demo URL
 
 ## Scope Decisions
 - Phase one ships a strong Chinese-first experience; English strings and full offline PWA remain roadmap items.
