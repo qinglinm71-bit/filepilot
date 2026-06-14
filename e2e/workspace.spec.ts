@@ -1,0 +1,3 @@
+import { expect, test } from '@playwright/test'
+test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('filepilot-onboarded', 'yes')); await page.goto('/') })
+test('imports a file and previews a rename', async ({ page }) => { const chooser = page.waitForEvent('filechooser'); await page.getByRole('button', { name: '选择文件' }).first().click(); const fileChooser = await chooser; await fileChooser.setFiles({ name: 'draft report.txt', mimeType: 'text/plain', buffer: Buffer.from('FilePilot') }); await expect(page.getByText('draft report.txt')).toBeVisible(); await page.getByLabel('前缀').fill('final-'); await expect(page.getByText(/final-draft report.txt/)).toBeVisible() })
